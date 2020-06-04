@@ -1,0 +1,1 @@
+!function(){var e=require("common:widget/data-center/data-center.js");e.set("page","disk-home");var t=!1;window.XMLHttpRequest?"1"===window.yunDataTimelineStatus&&(t=!0):e.set("isIE6",!0),e.set("is-timeline",t)}();

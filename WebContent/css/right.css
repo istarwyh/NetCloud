@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ss {
+display:block;
+position:absolute;
+/*top:1.2em;*/
+margin-top:-6px;
+margin-left:85px;
+left:1;
+width:80px;
+height:100px;
+text-align:center;
+border:1px solid #CCC;
+background:rgb(240,240,240);
+font-size:12px;
+}
+.ss a:hover {
+	text-decoration:none;
+	color:#666;
+	background:rgb(240,240,240);
+	}
+.ss a{
+	display:block;
+	text-decoration:none;
+	color:#666;}
+ .ss {
+	display: none;
+}
+.allfile{
+   margin-bottom:5px; 
+   margin-left:25px;
+   margin-top:5px;
+ }

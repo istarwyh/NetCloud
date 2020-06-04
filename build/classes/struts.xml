@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.multipart.maxSize" value="8589934592" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.action.extension" value="action" />
+	<constant name="struts.multipart.parser" value="requestParser" />
+
+	<bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest" name="requestParser"
+        class="com.nitcloud.netdisk.utils.MyMultiPartRequest" scope="default" optional="true" />
+        
+	<package name="default" namespace="/" extends="struts-default">
+
+		<default-action-ref name="index" />
+
+		<global-results> 
+		 	<result name="error">/error.jsp</result> 
+		</global-results> 
+		
+		<global-exception-mappings> 
+			<exception-mapping exception="java.lang.NullPointerException" result="error"/> 
+		</global-exception-mappings> 
+
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="login" namespace="/" extends="struts-default">
+	
+		<global-results> 
+		 	<result name="error">/error.jsp</result> 
+		</global-results> 
+		
+		<global-exception-mappings> 
+			<exception-mapping exception="java.lang.NullPointerException" result="error"/> 
+		</global-exception-mappings> 
+		
+		
+		<action name="login">
+			<result>/login.jsp</result>
+		</action>
+
+		<action name="logincheck" class="loginAction"
+			method="loginCheck">
+			<result name="success" type="redirectAction">user</result>
+			<result name="error">/login.jsp</result>
+		</action>
+
+		<action name="user" class="userAction"
+			method="index">
+			<result>/index.jsp</result>
+		</action>
+
+		<action name="super" class="userAction" method="addSuperUser">
+			<result type="redirectAction">login</result>
+		</action>
+	</package>
+
+	<include file="struts-user.xml" />
+	<include file="struts-admin.xml" />
+
+</struts>

@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+#menu2 a i {
+margin-right:10px;
+background:url('../img/glyphicons-halflings-white1.png');
+background-position:-240px 0;
+}

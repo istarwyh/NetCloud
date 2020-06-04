@@ -1,0 +1,100 @@
+/**
+ * Unicorn Admin Template
+ * Diablo9983 -> diablo9983@gmail.com
+**/
+body {
+	background-color: rgb(240,240,240);
+}
+
+#header {
+    box-shadow: 0 1px 0 rgb(37,37,37);
+	background-color: rgb(37,37,37);/* Old browsers */
+    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(rgb(37,37,37)), to(rgb(37,37,37)));/* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, rgb(37,37,37) 0%, rgb(37,37,37) 100%);/* Chrome10+,Safari5.1+ */
+    background-image: -moz-linear-gradient(top, rgb(37,37,37) 0%, rgb(37,37,37) 100%);/* FF3.6+ */
+	background-image: -ms-linear-gradient(top, rgb(37,37,37) 0%, rgb(37,37,37) 100%);/* IE10+ */
+	background-image: -o-linear-gradient(top, rgb(37,37,37) 0%, rgb(37,37,37) 100%);/* Opera 11.10+ */
+	background-image: linear-gradient(top, rgb(37,37,37) 0%, rgb(37,37,37) 100%);/* W3C */
+    border-bottom: 1px solid rgb(37,37,37);
+}
+
+#search input[type=text], #search button {
+	background-color: #222222;
+}
+#search input[type=text]:focus {
+	color: #777777;
+}
+
+#sidebar > ul {
+	border-top: 1px solid rgb(247,249,251);
+	border-bottom: 1px solid rgb(247,249,251);
+}
+#sidebar > ul > li {
+	border-top: 1px solid rgb(247,249,251);
+	border-bottom: 1px solid rgb(247,249,251);
+}
+#sidebar > ul > li.active {
+    background-color: rgb(224,225,229);
+	background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(rgb(240,240,240)), to(rgb(224,225,229)));
+	background-image: -webkit-linear-gradient(top, rgb(240,240,240) 0%, rgb(224,225,229) 100%);
+	background-image: -moz-linear-gradient(top, rgb(240,240,240) 0%, rgb(224,225,229) 100%);
+	background-image: -ms-linear-gradient(top, rgb(240,240,240) 0%, rgb(224,225,229) 100%);
+	background-image: -o-linear-gradient(top, rgb(240,240,240) 0%, rgb(224,225,229) 100%);
+	background-image: linear-gradient(top, rgb(240,240,240) 0%, rgb(224,225,229) 100%);
+}
+
+#sidebar > ul > li.open.submenu > a {
+	border-bottom: 1px solid #393939;
+}
+#sidebar > ul > li.open.active.submenu > a {
+	border-bottom: 1px solid rgb(247,249,251);
+}
+#sidebar > ul > li > a > .label {
+	background-color: rgb(224,225,229);
+}
+#sidebar > ul > li > a:hover {
+	background-color: rgb(224,225,229);
+}
+#sidebar > ul ul {
+	border-top: 1px solid rgb(247,249,251);
+	background-color: rgb(224,225,229);
+}
+#sidebar > ul ul li a {
+	border-top: 1px solid rgb(247,249,251);
+	border-bottom: 1px solid rgb(247,249,251);
+}
+#sidebar > ul ul li a:hover, #sidebar > ul ul li.active a {
+	color: #555555;
+	background-color:rgb(224,225,229);
+/*	background:url(../img/glyphicons-halflings-white1.png)
+*/}
+
+.dropdown-menu li a:hover, .dropdown-menu .active a, .dropdown-menu .active a:hover {
+    color: #555555;
+	background-color: rgb(224,225,229);
+    background-image: -webkit-gradient(linear, 0 0%, 0 100%, rgb(224,225,229), #222222);
+    background-image: -webkit-linear-gradient(top, rgb(224,225,229) 0%, #222222 100%);
+    background-image: -moz-linear-gradient(top, rgb(224,225,229) 0%, #222222 100%);
+    background-image: -ms-linear-gradient(top, rgb(224,225,229) 0%, #222222 100%);
+    background-image: -o-linear-gradient(top, rgb(224,225,229) 0%, #222222 100%);
+    background-image: linear-gradient(top, rgb(224,225,229) 0%, #222222 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(224,225,229)', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+}
+
+@media (max-width: 480px) {
+	#sidebar > a {
+		background-image: -moz-linear-gradient(top, rgb(224,225,229) 0%, rgb(224,225,229) 100%);
+		border-bottom: 1px solid rgb(247,249,251);
+	}
+	#sidebar > ul {
+		background-color: rgb(224,225,229);
+	}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	#sidebar > ul ul:before {
+		border-right: 7px solid rgba(0, 0, 0, 0.2);
+	}
+	#sidebar > ul ul:after {
+		border-right: 6px solid #222222;
+    }
+}

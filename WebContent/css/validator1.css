@@ -1,0 +1,5 @@
+.onShow{background:none; padding-left:25px; height:20px; line-height:20px; }
+.onFocus{background:none; padding-left:25px; height:20px; line-height:20px;}
+.onError{background: none; padding-left:25px; height:20px; line-height:20px;}
+.onSuccess{background: none; padding-left:25px; height:20px; line-height:20px;}
+.onLoad{background:none; padding-left:25px; height:20px; line-height:20px;} 

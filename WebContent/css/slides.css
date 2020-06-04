@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+.slides_container {display:none;}
+.slides_container div {display:block;}
+.slides_container a {display:block;}
+.pagination {position: relative;z-index:99;list-style:none;margin:0;padding:0;margin-top: -40px;text-align: center;}
+.pagination li{display:inline-block;*display:inline; zoom:1;width:20px;}
+.pagination li a{background: url("../../images/default/banner/slider_btns.png") no-repeat 0 0;display: block;float: left;height:0px;padding-top:10px;overflow: hidden;width: 10px;text-indent:-9999px;}
+.pagination li.current a{background-position: 0 -10px;}

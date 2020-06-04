@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="admin" namespace="/admin" extends="default">
+
+		<global-results> 
+		 	<result name="error">/error.jsp</result> 
+		</global-results> 
+		
+		<global-exception-mappings> 
+			<exception-mapping exception="java.lang.NullPointerException" result="error"/> 
+		</global-exception-mappings> 
+		
+		
+		<action name="adminlogin" class="loginAction" method="adminLogin">
+            <result name="success" type="redirectAction">admin</result>
+            <result name="error">/login.jsp</result>
+        </action>
+        
+        <action name="admin" class="adminAction" method="index">
+            <result>/admin/index.jsp</result>
+        </action>
+        
+        <action name="admin_updateinfo" class="adminAction" method="updateInfo">
+            <result>/admin/updateInfo.jsp</result>
+        </action>
+        
+        <action name="admin_updateinfodeal" class="adminAction" method="updateInfoDeal">
+            <result>/admin/welcome.jsp</result>
+        </action>
+        
+		<action name="logout" class="userAction" method="logout">
+            <result name="success" type="redirectAction">login</result>
+        </action>
+        
+        <action name="register" class="userAction" method="register">
+            <result>/register.jsp</result>
+        </action>
+        
+        <action name="registerdeal" class="userAction" method="registerDeal">
+        	<result name="success" type="redirectAction">login</result>
+        </action>
+        
+       
+        
+        <!-- 处理部门的action请求 -->
+        <action name="department_list" class="departmentAction" method="list">
+        	<result>/admin/departmentList.jsp</result>
+        </action>
+        <action name="department_add" class="departmentAction" method="add">
+        	<result>/admin/addDepartment.jsp</result>
+        </action>
+        <action name="department_adddeal" class="departmentAction" method="addDeal">
+        	<result type="chain">department_list</result>
+        </action>
+        <action name="department_update" class="departmentAction" method="update">
+        	<result>/admin/updateDepartment.jsp</result>
+        </action>
+        <action name="department_updatedeal" class="departmentAction" method="updateDeal">
+        	<result type="chain">department_list</result>
+        </action>
+        <action name="department_delete" class="departmentAction" method="delete">
+        	<result type="chain">department_list</result>
+        </action>
+        
+        
+        
+        <!-- 处理用户的action请求 -->
+        <action name="user_list" class="userAction" method="list">
+        	<result>/admin/userList.jsp</result>
+        </action>
+        <action name="user_add" class="userAction" method="add">
+        	<result>/admin/addUser.jsp</result>
+        </action>
+        <action name="user_adddeal" class="userAction" method="addDeal">
+        	<result type="chain">user_list</result>
+        </action>
+        <action name="user_delete" class="userAction" method="delete">
+        	<result type="chain">user_list</result>
+        </action>
+        <action name="user_update" class="userAction" method="update">
+        	<result>/admin/updateUser.jsp</result>
+        </action>
+        <action name="user_updatedeal" class="userAction" method="updateDeal">
+        	<result type="chain">user_list</result>
+        </action>
+        <action name="user_setaccess" class="userAction" method="setAccess">
+        	<result>/admin/setAccess.jsp</result>
+        </action>
+        <action name="user_setaccessdeal" class="userAction" method="setAccessDeal">
+        	<result type="chain">user_list</result>
+        </action>
+        
+        
+        <!-- 处理部门的action请求 -->
+        <action name="department_list" class="departmentAction" method="list">
+        	<result>/admin/departmentList.jsp</result>
+        </action>
+        
+        
+        <!-- 处理文件的action请求 -->
+        <action name="file_userlist" class="userAction" method="list">
+        	<result>/admin/userFileList.jsp</result>
+        </action>
+        <action name="file_list" class="fileAction" method="list">
+        	<result>/admin/fileList.jsp</result>
+        </action>
+        <action name="admindownloadfile" class="fileAction">
+            <result type="stream">
+				<param name="contentType">application/octet-stream;charset=UTF-8</param>
+                <param name="inputName">downloadFileByAdmin</param>  
+                <param name="contentDisposition">attachment;filename="${downloadName}"</param>
+                <param name="bufferSize">4096</param>  
+			</result>
+        </action>
+    </package>
+</struts>

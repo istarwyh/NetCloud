@@ -1,0 +1,35 @@
+@charset "utf-8";
+p {
+	margin:0;
+}
+#onService_panel {position: fixed;_position: absolute;left: 5px;bottom: 100px;_top: expression(eval(document.documentElement.scrollTop + 20));width: auto;height:auto;z-index: 20;font-size:12px;color: #606b7b;overflow:hidden;}
+.online_box{ height:187px; width:34px;}
+.online_box li{width:34px; height:34px; line-height:34px; text-align:center; background:#f0f3f6 url(../images/online_icon.png) no-repeat -64px 0px; margin-top:1px;}
+.online_box .icon0{ background-position:-64px 0;}
+.online_box .icon1{ background-position:-64px -35px;}
+.online_box .icon2{ background-position:-64px -70px;}
+.online_box .icon0:hover{ background-color:#bb0000; background-position:-5px 0px;}
+.online_box .icon1:hover{ background-color:#bb0000; background-position:-4px -35px;}
+.online_box .icon2:hover{ background-color:#bb0000; background-position:-4px -70px;}
+.icon0_container{ width:330px; height:187px; position: relative; margin-top: -187px; margin-left:50px; background: url(../images/icon0_h_bg.png) no-repeat center center;}
+.btn_close{ background:none; border:none; cursor:pointer; outline:none; width:22px; height:20px; display:block; float:right;}
+.hover_con1{ width:291px; height:59px; padding-top:21px; *+padding-top:2px; margin-left:18px;}
+.hover_con1 .dll{width:130px; float:left;}
+.hover_con1 .dlr{width:161px; float:left;}
+.hover_con1 .dll dt,
+.hover_con1 .dlr dt{ height:23px; line-height:23px; padding-left:32px; color:#fff;}
+.hover_con1 .dlr a{ display:block;width:119px; height:23px; line-height:21px; margin-left:-9px;}
+.hover_con1 dd{height:35px; line-height:35px;}
+.hover_con1 dd a{color: #606b7b;}
+.hover_con1 dd a:hover{color: #bb0000;}
+.hover_con1 dd.padl20{ padding-left:10px;}
+.btn_online_zx{ width:119px; height:23px; line-height:21px; border:none; text-align:center; color:#fff; cursor:pointer; background:none;outline:none;}
+.hover_con2{ width:291px; margin-left:18px; padding-top:10px; color:#b5b5b6;}
+.hover_con2 h4{ font-size:12px; color:#606b7b; line-height: 20px; font-family:Arial, Helvetica, sans-serif; font-weight:500;}
+.hover_con2 h4 a{ color:#606b7b; text-decoration:none;}
+.hover_con2 h4 a:hover{ text-decoration:none;}
+.hover_con2 p{ line-height:20px;}
+.hover_con2 .h4_mt10{ margin-top:5px;}
+.online_box .icon0_hover{ background-color:#bb0000; background-position:-5px 0px;}
+.hover_con1 .dlr a:hover{ color:#fff;  text-decoration:none; }
+

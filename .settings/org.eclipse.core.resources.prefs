@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//WebContent/login.jsp=UTF-8
+encoding//WebContent/upload.jsp=UTF-8
+encoding//src/com/nitcloud/netdisk/action=GBK
+encoding//src/com/nitcloud/netdisk/action/UserAction.java=GBK
+encoding//src/com/nitcloud/netdisk/servlet=GBK
+encoding//src/com/nitcloud/netdisk/utils/AES.java=UTF-8
+encoding//src/com/nitcloud/netdisk/utils/DealFile.java=GBK
+encoding//src/com/nitcloud/netdisk/utils/UploadFile.java=GBK
+encoding//src/com/nitcloud/netdisk/utils/hdfs.java=UTF-8
+encoding/<project>=UTF-8
+encoding/introduction.txt=GBK

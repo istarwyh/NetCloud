@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+	<!-- 启用spring注解支持 -->
+	<context:annotation-config />
+	
+	<!-- 自动扫描Spring注解配置 -->
+	<context:component-scan base-package="com" />
+	
+	<!-- 自动加载属性配置文件 -->
+	<context:property-placeholder location="classpath:*.properties" />
+	
+	<bean id="dealType" class="com.nitcloud.netdisk.utils.DealType">
+		<property name="audio" value="${filetype.audio}"/>
+	    <property name="video" value="${filetype.video}"/>
+	    <property name="picture" value="${filetype.picture}"/>
+	    <property name="zip" value="${filetype.zip}"/> 
+	    <property name="document" value="${filetype.document}"/> 
+	    <property name="encryptall" value="${filetype.encryptall}"/> 
+	</bean>
+	
+	<bean id="hdfs" class="com.nitcloud.netdisk.utils.hdfs">
+		<property name="dealType" ref="dealType"></property>
+	</bean>
+	
+	<bean id="dealFile" class="com.nitcloud.netdisk.utils.DealFile">
+		<property name="address" value="hdfs://192.168.56.100"/>
+		<property name="hdfs" ref="hdfs"/>
+	</bean>
+	
+	
+	<bean id="aes" class="com.nitcloud.netdisk.utils.AES"></bean>
+	
+
+	
+	<!--配数据源 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="${jdbc.driverClassName}"/>
+	    <property name="jdbcUrl" value="${jdbc.url}"/>
+	    <property name="user" value="${jdbc.username}"/>
+	    <property name="password" value="${jdbc.password}"/> 
+	    <property name="maxIdleTime" value="${cpool.maxIdleTime}" />
+	</bean>
+	
+	<!--  
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClass" value="${jdbc.driverClassName}"/>
+	    <property name="jdbcUrl" value="${jdbc.url}"/>
+	    <property name="user" value="${jdbc.username}"/>
+	    <property name="password" value="${jdbc.password}"/> 
+	</bean>
+	-->
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+		
+		<property name="packagesToScan" value="com.nitcloud.netdisk.domain" />
+	</bean>
+	
+
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- 事务的传播特性 -->
+	<tx:advice id="txadvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+	<!-- 那些类那些方法使用事务 -->
+	<aop:config>
+	  <!-- 只对业务逻辑层实施事务 -->
+		<aop:pointcut id="allManagerMethod"
+			expression="execution(* com.nitcloud.netdisk.service.*.*(..))" />
+		<aop:advisor pointcut-ref="allManagerMethod" advice-ref="txadvice" />
+	</aop:config>
+
+</beans>

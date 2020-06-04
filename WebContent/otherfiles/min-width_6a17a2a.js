@@ -1,0 +1,1 @@
+!function(){var i=require("common:widget/libs/jquerypacket.js");i(window).bind("resize",function(){var e=i(window).width(),w=i("#doc");1024>e?w.width(1024):w.width("auto")}),i(window).trigger("resize")}();

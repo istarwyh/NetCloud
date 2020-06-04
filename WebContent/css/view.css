@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+.center{ width:1120px; margin:25px auto 0px; overflow:hidden;}
+.z_product_right{ width:862px; float:right;}
+.locate{ width:862px; float:left; height:30px;}
+.locate_left{ line-height:30px; background:url(../images/icons_18.png) no-repeat 0px 6px; padding-left:23px; float:left;}
+.locate .ext{ float:right; padding-right:5px;}
+.locate span.end{ color:#a60007;}
+
+.r_cont{ width:862px; overflow:hidden; margin-top:10px; float:left;}
+.r_title{ width:860px; height:38px; background:url(../images/rightbg_1.jpg) repeat-x; border:1px solid #e1e1e1;}
+.r_title h1{ font-family:Microsoft YaHei; font-size:18px; color:#333; font-weight:normal; line-height:38px; padding-left:20px; float:left;}
+.r_title_r{ float:right; line-height:38px; padding-right:20px;}
+.r_title_r a{ font-weight:bold; color:#A60007;}
+.r_anchor{ width:840px; padding:10px; overflow:hidden;}
+.r_anchor li{ line-height:30px; color:#b50003; padding:0px 20px 0px 5px; float:left;}
+.r_anchor li a{ color:#b50003;}
+.r_faq{ width:862px; padding:0px; float:left;}
+.r_faq_tit{ width:820px; height:30px; border-bottom:1px solid #b60005; margin:15px 20px; float:left; display:inline;}
+.r_faq_tit h5{ font-size:14px; line-height:30px;}
+.r_faq_ans{ width:862px; float:left;}
+.r_faq_ans p{ line-height:28px; text-indent:2em;}
+.r_faq_ans .tt{ color:#333;}
+.r_faq_ans .as{ text-indent:1.5em;}
+.r_faq_ans .as a{ text-decoration:underline; color:#006699;}
+.r_faq_img{ border:1px solid #EEEEEE; margin:10px 0px; text-align:center; width:860px; float:left;}
+.r_yn{ width:820px; border:1px solid #eeeeee; float:left; padding:15px 20px; display:none;}
+.r_yn p{ width:785px; height:22px; line-height:22px; padding-left:35px; background:url(../images/y_n_bg.png) no-repeat; margin:5px 0px; float:left;}
+.r_yn p a{ color:#3a93ed;}
+.r_yn p.r_yn_yes{ background-position:0 0;}
+.r_yn p.r_yn_no{ background-position:0 -32px;}
+
+/*wyshuo*/
+.p_contFaq_box {
+    width: 820px;
+    overflow: hidden;
+    padding: 15px 20px;
+}
+.p_faq_type {
+    width: 820px;
+}
+.p_faq_type .p_type_tit {
+    width: 800px;
+    height: 30px;
+    line-height: 30px;
+    background: url("../images/commonicon.png") no-repeat scroll 0% 0% transparent;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.p_faq_type .close {
+    background-position: -391px -457px;
+}
+.p_faq_type .open {
+    background-position: -391px -419px;
+}
+.p_faq_type .p_type_con {
+    width: 738px;
+    margin: 0px 20px 10px;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: rgb(253, 250, 250);
+    padding: 10px 20px;
+}
+.p_gound {
+    width: 820px;
+    padding: 0px 20px;
+}
+.p_gound .p_api_list {
+    width: 820px;
+    border-bottom: 1px dashed rgb(216, 216, 216);
+    padding: 5px 0px 10px;
+}
+.p_gound .p_api_list .title {
+    color: rgb(182, 0, 5);
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 20px 10px 10px;
+    overflow: hidden;
+    line-height: 35px;
+}
+.p_gound .p_api_list .title b {
+    float: right;
+    display: block;
+}
+.p_gound .p_api_list .detail {
+    line-height: 24px;
+    padding: 0px 10px;
+}
+.p_gound .p_api_list .detail b {
+    color: rgb(102, 102, 102);
+}
+.p_gound .p_api_list .look_btn a:hover {
+    background-position: -110px -125px;
+    text-decoration: none;
+}
+.p_gound .p_api_list .look_btn a {
+    width: 109px;
+    height: 27px;
+    line-height: 25px;
+    display: block;
+    background: url("../images/commonicon.png") no-repeat scroll 0px -125px transparent;
+    color: rgb(255, 255, 255);
+    font-family: Microsoft YaHei;
+    text-align: center;
+    float: left;
+}
+.p_gound .p_api_list {
+    width: 820px;
+    border-bottom: 1px dashed rgb(216, 216, 216);
+    padding: 5px 0px 10px;
+}
+.p_gound .p_api_list .look_btn {
+    margin: 5px 10px;
+    overflow: hidden;
+}
+.p_contCase_box{ margin-bottom:30px;}

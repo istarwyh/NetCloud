@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>AjaxUpload</title>
+</head>
+<body onLoad="javascript:alert('onload')" onUnload="javascript:alert('onunload')"> 
+<form name="AjaxUpload" method="post" action="upload.jsp" target="hidden_frame">
+  <input name="file" type="file"><input type="submit" name="Submit" value="提交">
+</form>
+<iframe name='hidden_frame' id="hidden_frame" style="display:none"></iframe> 
+<span id="returnmsg"></span>
+<script  type="text/javascript">
+function callback(returnmsg)   
+{   
+    document.getElementById("file").outerHTML = document.getElementById("file").outerHTML;   
+    document.getElementById("returnmsg").innerHTML = returnmsg;   
+}
+</script>
+</body>
+</html>
