@@ -20,9 +20,9 @@
 <link rel="icon" href="images/ico.ico" sizes="32x32">
 
 
-<title>奇观云盘 - 免费注册南工星云帐号</title>
+<title>软微云盘 - 免费注册软微帐号</title>
 <script type="text/javascript" async
-	src="./星云云盘 - 免费注册南工星云帐号_files/ga.js"></script>
+	src="./软微云盘 - 免费注册软微帐号_files/ga.js"></script>
 <script>
 	var G_start_time = new Date;
 </script>
@@ -37,7 +37,7 @@
 <link type="text/css" rel="stylesheet" href="css/reg-common_datauri.css">
 
 <!--<![endif]-->
-<script type="text/javascript" src="./星云云盘 - 免费注册南工星云帐号_files/1141.js"></script>
+<script type="text/javascript" src="./软微云盘 - 免费注册软微帐号_files/1141.js"></script>
 
 <!--[if lt IE 9]>
 <script type="text/javascript">(function(){
@@ -100,10 +100,10 @@ body,div{font-size:12px;}
 <body>
 	<div class="header clearfix">
 		<div class="container">
-			<!--  <a href="##" class="logo">星云云盘</a> -->
+			<!--  <a href="##" class="logo">软微云盘</a> -->
 			<a href="login.action"
 				style="background: url(images/logo.png);
-      float: left;height: 27px;margin-top: 20px;margin-left:200px;overflow: hidden;text-indent: -2000px;width: 157px;">奇观云盘</a>
+      float: left;height: 27px;margin-top: 20px;margin-left:200px;overflow: hidden;text-indent: -2000px;width: 157px;">软微云盘</a>
 			<div class="navbar">
 
 
@@ -120,7 +120,7 @@ body,div{font-size:12px;}
 	</div>
 
 	<div id="main">
-		<h1 class="reg-title">欢迎注册奇观云盘</h1>
+		<h1 class="reg-title">欢迎注册软微云盘</h1>
 		<div id="reg">
 		  <table border="1" width="45%" height="250" style="border-width: 0px">
 	<!-- MSTableType="layout" -->
@@ -178,7 +178,7 @@ body,div{font-size:12px;}
           <input id="agree" type="checkbox" style="width:15px; height:15px;"
 								name="is_agree"  checked="checked"
 								value="1">我已经阅读并同意
-		 <a href="services.jsp" class="fac" target="_blank">《奇观云盘用户服务条款》</a>
+		 <a href="services.jsp" class="fac" target="_blank">《软微云盘用户服务条款》</a>
         </li>
         <li>
         	<button class="submit" type="submit">注册</button>
@@ -199,7 +199,7 @@ body,div{font-size:12px;}
 </p>
 
 <p class="copyright">
-版权所有 软件微电子学院信息安全课程 京ICP备12345678号
+版权所有 软件微电子学院Hadoop课程 京ICP备12345678号
 		</p>
 		</div>
 	</div>

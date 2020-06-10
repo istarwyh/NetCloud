@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 
-<title>南工星云云盘管理系统</title>
+<title>软微云盘管理系统</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -130,7 +130,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 		<div id="content-header">
 
-			<h1>南工星云云盘后台管理系统，欢迎您的登陆！</h1>
+			<h1>软微云盘后台管理系统，欢迎您的登陆！</h1>
 
 		</div>
 		<div id="breadcrumb">

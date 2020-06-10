@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta name="renderer" content="webkit">
 <link rel="shortcut icon" href="images/ico.ico" />
  
-<title>奇观云盘 - 安全免费 无限空间</title>
+<title>软微云盘 - 安全免费 无限空间</title>
 <link rel="stylesheet" href="css/select.css">
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">
@@ -32,11 +32,11 @@ $(function(){
 	});	
 })
 </script>
-<script type="text/javascript" async="" src="./星云云盘 - 安全免费 无限空间_files/ga.js"></script><script>var G_start_time = new Date;</script>
+<script type="text/javascript" async="" src="./软微云盘 - 安全免费 无限空间_files/ga.js"></script><script>var G_start_time = new Date;</script>
 <script type="text/javascript" src="js/login.js"></script>
 <!--[if (lt IE 8.0)]><link type="text/css" rel="stylesheet" href="http://s8.qhimg.com/static/5efb15d385fe1584/index.src.css"><![endif]--><!--[if (!IE)|(gte IE 8.0)]><!--><link type="text/css" rel="stylesheet" href="css/index.src_datauri.css"><!--<![endif]-->
 
-<script type="text/javascript" src="./星云云盘 - 安全免费 无限空间_files/1141.js"></script>
+<script type="text/javascript" src="./软微云盘 - 安全免费 无限空间_files/1141.js"></script>
 
 
 <script type="text/javascript">(function(){
@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 <div class="header clearfix">
     <div class="container">
-        <a  style="background: url('images/logo.png'); float: left;height: 27px;margin-top: 20px;overflow: hidden;text-indent: -2000px;width: 157px;">星云云盘</a>
+        <a  style="background: url('images/logo.png'); float: left;height: 27px;margin-top: 20px;overflow: hidden;text-indent: -2000px;width: 157px;">软微云盘</a>
         <div class="navbar">
            
         
@@ -105,7 +105,7 @@ $(document).ready(function(){
 	var startTime = new Date(),
 		loginInitTime;</script>
 
-<script type="text/javascript" src="./星云云盘 - 安全免费 无限空间_files/index-login.src.js"></script>
+<script type="text/javascript" src="./软微云盘 - 安全免费 无限空间_files/index-login.src.js"></script>
 <script>if(!window.isCdnOk) document.write('<script type="text/javascript" src="/resource/js/web/index-login.src.js"><\/script>');</script>
 
 <div class="slide-wrap">
@@ -124,7 +124,7 @@ $(document).ready(function(){
 			<span data-index="1" class="cur-point"></span>
 	   </div>
 <div class="login-panel login-tab">
-<h1>欢迎使用奇观云盘</h1>
+<h1>欢迎使用软微云盘</h1>
 
 <div class="box_css">
 	    <ul class="nav2">
@@ -292,7 +292,7 @@ $(document).ready(function(){
         </p>
         <br>
         <p class="copyright">
-            版权所有 软件微电子学院信息安全课程 京ICP备12345678号
+            版权所有 软件微电子学院Hadoop课程 京ICP备12345678号
         </p>
         <br>
         <br>
@@ -314,7 +314,7 @@ var SERVER_TIME = '';
         }
     }catch(e){}
 		loginInitTime = (new Date())-startTime;</script>
-<script type="text/javascript" src="./星云云盘 - 安全免费 无限空间_files/index.src.js"></script>
+<script type="text/javascript" src="./软微云盘 - 安全免费 无限空间_files/index.src.js"></script>
 <script>W('.download-list .mobile-btn').click(function(){
 		var docRect = Dom.getDocRect();
 		if(Browser.ie6){}
@@ -347,7 +347,7 @@ var SERVER_TIME = '';
 <!--</div>
 </div>-->
 
-<script type="text/javascript" src="./星云云盘 - 安全免费 无限空间_files/m.js"></script>
+<script type="text/javascript" src="./软微云盘 - 安全免费 无限空间_files/m.js"></script>
 
 
 </body></html>

@@ -1,12 +1,12 @@
 # 1. NetCloud
 A Online Disk based on structs, servevlet, hibernate and mysql
-
+![](https://gitee.com/istarwyh/images/raw/master/1591766942_20200610132738443_24609.png)
+![](https://gitee.com/istarwyh/images/raw/master/1591766943_20200610132848013_6998.png)
 ## 1.1. 项目说明[^源]
 [^源]: [基于hadoop （hdfs）+ javaweb （ssh）实现的网盘](https://blog.csdn.net/LEoe_/article/details/71194440?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-8)
 
 这是一个基于Hadoop的云盘系统，实现的界面是用javaweb完成的，使用的是`Spring Struts2  hibernate`集合框架，配有sql文件。
 
-其实[同类型](https://shuwoom.com/?p=1353)的项目有很多,有的也写的很详细,只是都太久远了(17年以前...).
 ## 1.2. 部署环境
 
 ### 1.2.1. Linux安装mysql

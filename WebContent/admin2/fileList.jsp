@@ -145,7 +145,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 				<div class="row-fluid" >
 					<div id="footer" class="span12">
-						2014 &copy; 南工星云云盘管理系统. Brought to you by <a href="http://www.nitcloud.com/" target="view_window">河南省南工星云计算机技术有限责任公司</a>
+						2014 &copy; 软微云盘管理系统. Brought to you by <a href="http://www.nitcloud.com/" target="view_window">河南省软微计算机技术有限责任公司</a>
 					</div>
 				</div>
 			</div>

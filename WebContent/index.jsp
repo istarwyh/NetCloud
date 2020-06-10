@@ -13,7 +13,7 @@
 <base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="renderer" content="webkit">
-<title>星云云盘</title>
+<title>软微云盘</title>
 
 <link rel="shortcut icon" href="images/ico.ico" />
 <link href="css/yun_home_all.css" rel="stylesheet" />
@@ -82,7 +82,7 @@
 <script type="text/javascript" charset="utf-8" async _install="1"
 	src="./js/notice_head.js"></script>
 </head>
-<body class="flag-1" _title="星云 网盘-全部文件">
+<body class="flag-1" _title="软微 网盘-全部文件">
 	<script type="text/javascript">
 		/*<![CDATA[*/
 		(function() {
@@ -114,7 +114,7 @@
 
 						<!-- logo -->
 						<a node-type="click-ele pos-ele" data-key="LOGO"
-							class="f-icon logo" hidefocus="true" title="星云" href="http:"
+							class="f-icon logo" hidefocus="true" title="软微" href="http:"
 							xmlns="http://www.w3.org/1999/xhtml"> <img
 							src="images/logo.png">
 						</a>
@@ -171,12 +171,12 @@
 										<dl class="cl-dl-container clearfix">
 											<dt class="clearfix">
 												<a class="img-ico side-lwp7" href="http://###"
-													target="_blank" title="下载星云WP版"><span></span>WP</a> <a
+													target="_blank" title="下载软微WP版"><span></span>WP</a> <a
 													class="img-ico side-lipad" href="###" target="_blank"
-													title="下载星云iPad版"><span></span>iPad</a> <a
+													title="下载软微iPad版"><span></span>iPad</a> <a
 													class="img-ico side-lmactong" href="####"
-													title="下载星云Mac同步盘"><span></span>Mac同步盘</a> <a
-													class="img-ico side-lpctong" href="####" title="下载星云PC同步盘"><span></span>PC同步盘</a>
+													title="下载软微Mac同步盘"><span></span>Mac同步盘</a> <a
+													class="img-ico side-lpctong" href="####" title="下载软微PC同步盘"><span></span>PC同步盘</a>
 											</dt>
 											<dd class="side-lqrcode">
 												<img src="./js/baidu_app_link.png">扫描二维码下载

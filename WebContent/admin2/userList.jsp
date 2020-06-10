@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>南工星云云盘管理系统</title>
+<title>软微云盘管理系统</title>
 <meta charset="UTF-8" />
 <link rel="stylesheet" href="../css/bootstrap.min.css" />
 <link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
@@ -207,8 +207,8 @@ $(function () {
 			</div>
 			<div class="row-fluid">
 				<div id="footer" class="span12" style="padding: 60px;">
-					2014 &copy; 南工星云云盘管理系统. Brought to you by <a
-						href="http://www.nitcloud.com/" target="view_window">河南省南工星云计算机技术有限责任公司</a>
+					2014 &copy; 软微云盘管理系统. Brought to you by <a
+						href="http://www.nitcloud.com/" target="view_window">河南省软微计算机技术有限责任公司</a>
 				</div>
 			</div>
 		</div>

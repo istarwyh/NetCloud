@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <link rel="shortcut icon" href="images/ico.ico" />
 <title>
-奇观云盘后台管理系统
+软微云盘后台管理系统
 </title>
 	<link href="css/StudentStyle.css" rel="stylesheet" type="text/css" />
 	<link href="css/jbox.css" rel="stylesheet" type="text/css" />
@@ -73,7 +73,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="page">
                 <div id="logo" style="top:22px">
 					<div>
-						<span style="font-size:24px; color:#fff">奇观云盘后台管理系统</span>
+						<span style="font-size:24px; color:#fff">软微云盘后台管理系统</span>
 					</div>
                 </div>
                 <div class="topxx" style="padding-top:22px; font-size:14px; letter-spacing: 1px;">
@@ -155,7 +155,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		
 		<div class="footer" style="margin-top:20px">
             <p>
-                &copy;copyright 2015 奇观 版权所有 </p>
+                &copy;copyright 2015 软微 版权所有 </p>
         </div>
     </div>
 </body>

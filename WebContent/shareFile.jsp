@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>星云网盘-全部文件</title>
+<title>软微网盘-全部文件</title>
 <link rel="shortcut icon" href="images/ico.ico" />
 <script type="text/javascript">
 	function userchecked() {
